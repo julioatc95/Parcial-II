@@ -1,0 +1,34 @@
+﻿using System;
+using Parcial_II;
+namespace Parcial_II;
+
+public class Estudiante : Comparador
+{
+    public string Carne { get; set; }
+    public string Nombre { get; set; }
+    public string Correo { get; set; }
+    public int Total { get; set; }
+
+    public Estudiante(string carne, string nombre, string correo, int total)
+    {
+        Carne = carne;
+        Nombre = nombre;
+        Correo = correo;
+        Total = total;
+    }
+
+    public bool igualQue(object q) => this.Total == ((Estudiante)q).Total;
+    public bool menorQue(object q) => this.Total < ((Estudiante)q).Total;
+    public bool menorIgualQue(object q) => this.Total <= ((Estudiante)q).Total;
+    public bool mayorQue(object q) => this.Total > ((Estudiante)q).Total;
+    public bool mayorIgualQue(object q) => this.Total >= ((Estudiante)q).Total;
+
+    public override string ToString()
+    {
+        return $"Estudiante: {Nombre}\nCarné: {Carne}\nCorreo: {Correo}\nNota Total: {Total}";
+    }
+}
+
+
+
+

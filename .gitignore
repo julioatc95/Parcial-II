@@ -1,0 +1,23 @@
+# Archivos generados por Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
+
+# Archivos de configuración
+*.DotSettings
+*.ncb
+*.sdf
+*.dbmdl
+
+# Archivos de VSCode
+.vscode/
+
+# Otros
+*.class
+*.exe
+*.dll
