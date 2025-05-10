@@ -9,4 +9,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Estudiantes_Limpio.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Estudiantes_Limpio.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

@@ -17,11 +17,12 @@ public class Estudiante : Comparador
         Total = total;
     }
 
-    public bool igualQue(object q) => this.Total == ((Estudiante)q).Total;
-    public bool menorQue(object q) => this.Total < ((Estudiante)q).Total;
-    public bool menorIgualQue(object q) => this.Total <= ((Estudiante)q).Total;
-    public bool mayorQue(object q) => this.Total > ((Estudiante)q).Total;
-    public bool mayorIgualQue(object q) => this.Total >= ((Estudiante)q).Total;
+    public bool igualQue(object q) => this.Carne == ((Estudiante)q).Carne;
+    public bool menorQue(object q) => this.Carne.CompareTo(((Estudiante)q).Carne) < 0;
+    public bool menorIgualQue(object q) => this.Carne.CompareTo(((Estudiante)q).Carne) <= 0;
+    public bool mayorQue(object q) => this.Carne.CompareTo(((Estudiante)q).Carne) > 0;
+    public bool mayorIgualQue(object q) => this.Carne.CompareTo(((Estudiante)q).Carne) >= 0;
+
 
     public override string ToString()
     {
